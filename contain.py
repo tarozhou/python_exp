@@ -60,4 +60,15 @@ def get_random_list():
     random.shuffle(list)
     print list[0:2]
 
-get_random_list()
+
+#测试一下lamda
+def lamda_test():
+
+    print reduce(lambda a,b:a*b,[1,2,1,1,1])
+
+
+
+lamda_test()
+
+
+

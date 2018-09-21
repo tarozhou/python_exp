@@ -17,8 +17,8 @@ class Perceptron(object):
 
     def update_weight(self,x_vec,y,yp,rate):
 
-        delta =  yp - y
-        self.weights = map(lambda (x,w):w - rate*delta*x,zip(x_vec,self.weights))
+        delta =   y - yp
+        self.weights = map(lambda (x,w):w + rate*delta*x,zip(x_vec,self.weights))
         self.bias+=rate*delta
 
 
