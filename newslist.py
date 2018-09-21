@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 import sys
-from home_application.Util.TimeUtil import *
+from TimeUtil import *
 import urllib
 
 
